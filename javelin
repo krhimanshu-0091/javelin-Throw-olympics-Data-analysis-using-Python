@@ -1,0 +1,155 @@
+medalists = [
+    {"Year": 1908, "City": "London", "Gold": {"Name": "Eric Lemming", "Country": "Sweden"}, "Silver": {"Name": "Arne Halse", "Country": "Norway"}, "Bronze": {"Name": "Otto Nilsson", "Country": "Sweden"}},
+    {"Year": 1912, "City": "Stockholm", "Gold": {"Name": "Eric Lemming", "Country": "Sweden"}, "Silver": {"Name": "Julius Saaristo", "Country": "Finland"}, "Bronze": {"Name": "Mór Kóczán", "Country": "Hungary"}},
+    {"Year": 1920, "City": "Antwerp", "Gold": {"Name": "Jonni Myyrä", "Country": "Finland"}, "Silver": {"Name": "Urho Peltonen", "Country": "Finland"}, "Bronze": {"Name": "Pekka Johansson", "Country": "Finland"}},
+    {"Year": 1924, "City": "Paris", "Gold": {"Name": "Jonni Myyrä", "Country": "Finland"}, "Silver": {"Name": "Gunnar Lindström", "Country": "Sweden"}, "Bronze": {"Name": "Eugene Oberst", "Country": "United States"}},
+    {"Year": 1928, "City": "Amsterdam", "Gold": {"Name": "Erik Lundqvist", "Country": "Sweden"}, "Silver": {"Name": "Béla Szepes", "Country": "Hungary"}, "Bronze": {"Name": "Olav Sunde", "Country": "Norway"}},
+    {"Year": 1932, "City": "Los Angeles", "Gold": {"Name": "Matti Järvinen", "Country": "Finland"}, "Silver": {"Name": "Matti Sippala", "Country": "Finland"}, "Bronze": {"Name": "Eino Penttilä", "Country": "Finland"}},
+    {"Year": 1936, "City": "Berlin", "Gold": {"Name": "Gerhard Stöck", "Country": "Germany"}, "Silver": {"Name": "Yrjö Nikkanen", "Country": "Finland"}, "Bronze": {"Name": "Kalervo Toivonen", "Country": "Finland"}},
+    {"Year": 1948, "City": "London", "Gold": {"Name": "Tapio Rautavaara", "Country": "Finland"}, "Silver": {"Name": "Steve Seymour", "Country": "United States"}, "Bronze": {"Name": "József Várszegi", "Country": "Hungary"}},
+    {"Year": 1952, "City": "Helsinki", "Gold": {"Name": "Cy Young", "Country": "United States"}, "Silver": {"Name": "Bill Miller", "Country": "United States"}, "Bronze": {"Name": "Toivo Hyytiäinen", "Country": "Finland"}},
+    {"Year": 1956, "City": "Melbourne", "Gold": {"Name": "Egil Danielsen", "Country": "Norway"}, "Silver": {"Name": "Janusz Sidło", "Country": "Poland"}, "Bronze": {"Name": "Viktor Tsybulenko", "Country": "Soviet Union"}},
+    {"Year": 1960, "City": "Rome", "Gold": {"Name": "Viktor Tsybulenko", "Country": "Soviet Union"}, "Silver": {"Name": "Walter Krüger", "Country": "United Team of Germany"}, "Bronze": {"Name": "Gergely Kulcsár", "Country": "Hungary"}},
+    {"Year": 1964, "City": "Tokyo", "Gold": {"Name": "Pauli Nevala", "Country": "Finland"}, "Silver": {"Name": "Gergely Kulcsár", "Country": "Hungary"}, "Bronze": {"Name": "Jānis Lūsis", "Country": "Soviet Union"}},
+    {"Year": 1968, "City": "Mexico City", "Gold": {"Name": "Jānis Lūsis", "Country": "Soviet Union"}, "Silver": {"Name": "Jorma Kinnunen", "Country": "Finland"}, "Bronze": {"Name": "Gergely Kulcsár", "Country": "Hungary"}},
+    {"Year": 1972, "City": "Munich", "Gold": {"Name": "Klaus Wolfermann", "Country": "West Germany"}, "Silver": {"Name": "Jānis Lūsis", "Country": "Soviet Union"}, "Bronze": {"Name": "Bill Schmidt", "Country": "United States"}},
+    {"Year": 1976, "City": "Montreal", "Gold": {"Name": "Miklós Németh", "Country": "Hungary"}, "Silver": {"Name": "Hannu Siitonen", "Country": "Finland"}, "Bronze": {"Name": "Gheorghe Megelea", "Country": "Romania"}},
+    {"Year": 1980, "City": "Moscow", "Gold": {"Name": "Dainis Kūla", "Country": "Soviet Union"}, "Silver": {"Name": "Aleksandr Makarov", "Country": "Soviet Union"}, "Bronze": {"Name": "Wolfgang Hanisch", "Country": "East Germany"}},
+    {"Year": 1984, "City": "Los Angeles", "Gold": {"Name": "Arto Härkönen", "Country": "Finland"}, "Silver": {"Name": "David Ottley", "Country": "Great Britain"}, "Bronze": {"Name": "Kenth Eldebrink", "Country": "Sweden"}},
+    {"Year": 1988, "City": "Seoul", "Gold": {"Name": "Tapio Korjus", "Country": "Finland"}, "Silver": {"Name": "Jan Železný", "Country": "Czechoslovakia"}, "Bronze": {"Name": "Seppo Räty", "Country": "Finland"}},
+    {"Year": 1992, "City": "Barcelona", "Gold": {"Name": "Jan Železný", "Country": "Czechoslovakia"}, "Silver": {"Name": "Seppo Räty", "Country": "Finland"}, "Bronze": {"Name": "Steve Backley", "Country": "Great Britain"}},
+    {"Year": 1996, "City": "Atlanta", "Gold": {"Name": "Jan Železný", "Country": "Czech Republic"}, "Silver": {"Name": "Steve Backley", "Country": "Great Britain"}, "Bronze": {"Name": "Seppo Räty", "Country": "Finland"}},
+    {"Year": 2000, "City": "Sydney", "Gold": {"Name": "Jan Železný", "Country": "Czech Republic"}, "Silver": {"Name": "Steve Backley", "Country": "Great Britain"}, "Bronze": {"Name": "Sergey Makarov", "Country": "Russia"}},
+    {"Year": 2004, "City": "Athens", "Gold": {"Name": "Andreas Thorkildsen", "Country": "Norway"}, "Silver": {"Name": "Vadims Vasiļevskis", "Country": "Latvia"}, "Bronze": {"Name": "Sergey Makarov", "Country": "Russia"}},
+    {"Year": 2008, "City": "Beijing", "Gold": {"Name": "Andreas Thorkildsen", "Country": "Norway"}, "Silver": {"Name": "Ainārs Kovals", "Country": "Latvia"}, "Bronze": {"Name": "Tero Pitkämäki", "Country": "Finland"}},
+    {"Year": 2012, "City": "London", "Gold": {"Name": "Keshorn Walcott", "Country": "Trinidad and Tobago"}, "Silver": {"Name": "Antti Ruuskanen", "Country": "Finland"}, "Bronze": {"Name": "Vítězslav Veselý", "Country": "Czech Republic"}},
+    {"Year": 2016, "City": "Rio de Janeiro", "Gold": {"Name": "Thomas Röhler", "Country": "Germany"}, "Silver": {"Name": "Julius Yego", "Country": "Kenya"}, "Bronze": {"Name": "Keshorn Walcott", "Country": "Trinidad and Tobago"}},
+    {"Year": 2020, "City": "Tokyo", "Gold": {"Name": "Neeraj Chopra", "Country": "India"}, "Silver": {"Name": "Jakub Vadlejch", "Country": "Czech Republic"}, "Bronze": {"Name": "Vítězslav Veselý", "Country": "Czech Republic"}},
+    {"Year": 2024, "City": "Paris", "Gold": {"Name": "Arshad Nadeem", "Country": "Pakistan"}, "Silver": {"Name": "Neeraj Chopra", "Country": "India"}, "Bronze": {"Name": "Anderson Peters", "Country": "Grenada"}}
+]
+
+def SilverMedal2024():
+  
+    for medalist in medalists:
+        if medalist['Year'] == 2024:
+            return medalist['Silver']['Name']
+    return "No data for 2024"
+
+def NeerajMedals():
+    NeerajChopraMEdals = 0
+    for year in medalists:
+        for medal_type in ["Gold", "Silver", "Bronze"]:
+            if year[medal_type]["Name"] == "Neeraj Chopra":
+                NeerajChopraMEdals += 1
+    return NeerajChopraMEdals
+
+def IndiaMedals():
+    IndiaMedalist = 0
+    for year in medalists:
+        for medal_type in ["Gold", "Silver", "Bronze"]:
+            if year[medal_type]["Country"] == "India":
+                IndiaMedalist += 1
+    return IndiaMedalist
+
+def IndiaFirstMedalYear():
+    FirstMedal = None
+    for year in medalists:
+        for medal_type in ["Gold", "Silver", "Bronze"]:
+            if year[medal_type]["Country"] == "India":
+                FirstMedal = year["Year"]
+                return FirstMedal
+    return None
+
+def GoldMedalistCountry():
+    GoldCountry = set(medalist['Gold']['Country'] for medalist in medalists)
+    return len(GoldCountry)
+
+def MostSilverMedals():
+    MostSilver = {}
+    for year in medalists:
+        country = year["Silver"]["Country"]
+        MostSilver[country] = MostSilver.get(country, 0) + 1
+    MostSilver = max(MostSilver, key=MostSilver.get)
+    return MostSilver
+
+def BothGoldAndSilver():
+    GoldAndSilver = sum(1 for year in medalists if year["Gold"]["Country"] == year["Silver"]["Country"])
+    return GoldAndSilver
+
+def MostMedalist():
+    Medals = {}
+    for year in medalists:
+        for medal in ["Gold", "Silver", "Bronze"]:
+            country = year[medal]["Country"]
+            Medals[country] = Medals.get(country, 0) + 1
+    Medals = max(Medals, key=Medals.get)
+    return Medals
+
+def Medalist2024():
+    In2024 = next(medalist for medalist in medalists if medalist['Year'] == 2024)
+    return {
+        "Gold": f"{In2024['Gold']['Name']} from {In2024['Gold']['Country']}",
+        "Silver": f"{In2024['Silver']['Name']} from {In2024['Silver']['Country']}",
+        "Bronze": f"{In2024['Bronze']['Name']} from {In2024['Bronze']['Country']}",
+    }
+
+def MultipleMedalsInAYear():
+    from collections import defaultdict
+    athlete_medals = defaultdict(set)
+    for medalist in medalists:
+        athlete_medals[medalist['Gold']['Name']].add(medalist['Year'])
+        athlete_medals[medalist['Silver']['Name']].add(medalist['Year'])
+        athlete_medals[medalist['Bronze']['Name']].add(medalist['Year'])
+    return {athlete: sorted(years) for athlete, years in athlete_medals.items() if len(years) > 1}
+
+def main():
+    while True:
+        try:
+            question = int(input("Enter question number 1 to 10 or 0 to exit: "))
+            if question == 0:
+                print("program dismissed")
+                break
+            elif question == 1:
+                print("Q1. Silver medal win in 2024:")
+                print(SilverMedal2024())
+            elif question == 2:
+                print("Q2. Number of medals Neeraj Chopra won:")
+                print(NeerajMedals())
+            elif question == 3:
+                print("Q3. The Number of medals won by India:")
+                print(IndiaMedals())
+            elif question == 4:
+                print("Q4. In Which Year India won its first medal:")
+                year = IndiaFirstMedalYear()
+                if year:
+                    print(f"India won its first medal in {year}.")
+                else:
+                    print("India did not win a medal in the provided data.")
+            elif question == 5:
+                print("Q5. Different Countries won gold medal:")
+                print(GoldMedalistCountry())
+            elif question == 6:
+                print("Q6. Country which won the most silver medals in this event:")
+                print(MostSilverMedals())
+            elif question == 7:
+                print("Q7. How many times has the same country won both gold and silver in the same year:")
+                print(BothGoldAndSilver())
+            elif question == 8:
+                print("Q8. Country with the most medalists overall (gold, silver, and bronze combined):")
+                print(MostMedalist())
+            elif question == 9:
+                print("Q9. Names of the players and their countries who won gold, silver, and bronze medals in 2024:")
+                medals = Medalist2024()
+                for medal_type, details in medals.items():
+                    print(f"{medal_type}: {details}")
+            elif question == 10:
+                print("Q10. Athletes who won medals in more than one year:")
+                athletes = MultipleMedalsInAYear()
+                for athlete, years in athletes.items():
+                    print(f"{athlete} won medals in the years: {years}")
+            else:
+                print("Invalid question number")
+        except ValueError:
+            print("Invalid input")
+if __name__ == "__main__":
+    main()
